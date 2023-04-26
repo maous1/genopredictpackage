@@ -5,14 +5,13 @@
 #'
 #' @return
 #' @export
-#'
+#' @import stats
 #' @examples
 NormSAX <- function (D, a)
 {
   vector <- as.matrix(D)
   vector <- as.vector(vector)
-  vectorNorm <- (vector - mean(vector, na.rm = T))/stats::sd(vector,
-                                                             na.rm = T)
+  vectorNorm <- (vector - mean(vector, na.rm = T))/stats::sd(vector,na.rm = T)
   DS <- STSSaxEncode(D, vectorNorm, a)
   return(DS)
 }

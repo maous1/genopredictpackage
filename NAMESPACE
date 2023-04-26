@@ -2,11 +2,12 @@
 
 export(NormSAX)
 export(STSSaxEncode)
-export(allfunction)
 export(binning)
 export(classification)
 export(df_kmer)
+export(genopredictfunction)
 export(kmer)
 import(Biostrings)
 import(dplyr)
 import(purrr)
+import(stats)
