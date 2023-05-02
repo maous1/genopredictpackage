@@ -13,7 +13,7 @@
 genopredictfunction <- function(df , k , classe, min_prevalence = 10){
   if(min_prevalence > 100){message("more than 100%")}
   if(min_prevalence < 0){message("less than 100%")}
-  print("classification")
+  print("Discretisation")
   data <- classification(D = df,a = classe)
   print("kmer")
   data <- map(.x = as.list(data),.f = function(.x) kmer(.x,k))
