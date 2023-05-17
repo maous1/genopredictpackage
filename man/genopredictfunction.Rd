@@ -4,10 +4,10 @@
 \alias{genopredictfunction}
 \title{Title}
 \usage{
-genopredictfunction(df, k, classe, min_prevalence_percentage = 10)
+genopredictfunction(jsondata, k, classe, min_prevalence = 10)
 }
 \arguments{
-\item{k}{}
+\item{jsondata}{}
 }
 \description{
 Title
